@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import craftVid from "../assets/craft.mp4";
-import wonderVid from "../assets/wonder.mp4";
+// import craftVid from "../assets/craft.mp4";
+// import wonderVid from "../assets/wonder.mp4";
 import courageVid from "../assets/courage.mp4";
 import curiosityVid from "../assets/cursoity.mp4";
 import attentionVid from "../assets/attention.mp4";
 
 const clients = [
-  { name: "CRAFT",     media: craftVid },
-  { name: "WONDER",    media: wonderVid },
+  // { name: "CRAFT",     media: craftVid },
+  // { name: "WONDER",    media: wonderVid },
   { name: "COURAGE",   media: courageVid },
   { name: "CURIOSITY", media: curiosityVid },
   { name: "ATTENTION", media: attentionVid },
