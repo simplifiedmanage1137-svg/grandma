@@ -1,1 +1,5 @@
+# Redirect non-www to www
+https://grandmashive.com/*  https://www.grandmashive.com/:splat  301!
+
+# SPA fallback - serve index.html for all routes
 /*  /index.html  200
