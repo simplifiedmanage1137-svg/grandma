@@ -6,8 +6,8 @@ import curiosityVid from "../assets/cursoity.mp4";
 import attentionVid from "../assets/attention.mp4";
 
 const clients = [
-  // { name: "CRAFT",     media: craftVid },
-  // { name: "WONDER",    media: wonderVid },
+  { name: "CRAFT",     },
+  { name: "WONDER",   },
   { name: "COURAGE",   media: courageVid },
   { name: "CURIOSITY", media: curiosityVid },
   { name: "ATTENTION", media: attentionVid },
