@@ -81,7 +81,7 @@ const notificationHtml = ({ name, email, phone, company, message }) => `
   .ftr{background:#f9f9f9;padding:14px 36px;font-size:11px;color:#aaa;border-top:1px solid #eee}
 </style></head><body>
 <div class="wrap">
-  <div class="hdr"><h1>🐝 New Contact — Grandma's Hive</h1></div>
+  <div class="hdr"><h1>New Contact — Grandma's Hive</h1></div>
   <div class="bdy">
     <div class="row"><div class="lbl">Name</div><div class="val">${name}</div></div>
     <div class="row"><div class="lbl">Email</div><div class="val">${email}</div></div>
