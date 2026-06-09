@@ -1,4 +1,6 @@
     import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../routes';
 import UIUX2 from "../assets/UIUX2.mp4";
 import MortionGrandma from "../assets/3dMortionGrandma.mp4";
 import Home1 from "../assets/Home1.mp4";
@@ -6,6 +8,7 @@ import Home1 from "../assets/Home1.mp4";
 
 
     function AboutSection() {
+    const navigate = useNavigate();
 
 useEffect(() => {
   const container = document.querySelector(".about-container");

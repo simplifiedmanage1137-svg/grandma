@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../../../routes';
 import "../serviceMobile.css";
 function Name() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: window.innerHeight * 0.5, behavior: "smooth" });
   }, []);
@@ -38,7 +41,6 @@ body::-webkit-scrollbar { display: none; }
 @media (max-width: 900px) {
   .top-section { flex-direction: column; padding-left: 10px; }
   .left, .right { width: 100%; padding: 0; }
-   
   .left h1 { margin-left:1px;font-size: 32px; padding: 0; line-height: 1.2; }
   .visit { font-size: 18px; padding: 0; margin-top: 20px; }
   .right { margin-top: 30px; padding-left: 0; }
@@ -70,7 +72,7 @@ body::-webkit-scrollbar { display: none; }
       <div className="top-section">
         <div className="left">
           <h1>Leverage the power of WebGL to create stunning 3D experiences directly in the browser, pushing the boundaries of what's possible on the web.</h1>
-          <div className="visit">Explore WebGL →</div>
+          <div className="visit" onClick={() => navigate(ROUTES.CONTACT)}>Let's Chat →</div>
         </div>
         <div className="right">
           <div className="block"><h3>Industry</h3><p>Web Technology / 3D</p></div>

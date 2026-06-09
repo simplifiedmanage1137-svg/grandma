@@ -1,7 +1,10 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../../../routes';
 import "../serviceMobile.css";
 import service9 from "../../../assets/service9.mp4";
 function Name() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: window.innerHeight * 0.8, behavior: "smooth" });
   }, []);
@@ -229,7 +232,7 @@ body::-webkit-scrollbar {
       <div className="top-section">
         <div className="left">
           <h1>Distribution turns creative work into business results. We help brands connect content, campaigns, and audiences through strategic distribution and performance-focused execution.</h1>
-          <div className="visit">lets chat→</div>
+          <div className="visit" onClick={() => navigate(ROUTES.CONTACT)}>lets chat→</div>
         </div>
         <div className="right">
           <div className="block"><h3>Industry</h3><p>Marketing / Growth</p></div>

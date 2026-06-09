@@ -1,8 +1,11 @@
 
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../../../routes';
 import "../serviceMobile.css";
 import service3 from "../../../assets/service3.mp4";
 function Name() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: window.innerHeight * 0.5, behavior: "smooth" });
   }, []);
@@ -252,7 +255,7 @@ From podcasts and video to motion graphics and campaign assets, we create the co
               </h1>
     
     
-              <div className="visit">lets chat</div>
+              <div className="visit" onClick={() => navigate(ROUTES.CONTACT)}>Let's Chat →</div>
             </div>
     
             {/* RIGHT */}

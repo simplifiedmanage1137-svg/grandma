@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../../../routes';
 import "../serviceMobile.css";
 import ThreeDM from "../../../assets/ThreeDM.mp4";
 import service3 from "../../../assets/service3.png";
@@ -6,6 +8,7 @@ import service3 from "../../../assets/service3.png";
 
 
 function Name() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: window.innerHeight * 0.2, behavior: "smooth" });
   }, []);
@@ -281,7 +284,7 @@ body::-webkit-scrollbar {
               </h1>
     
     
-              <div className="visit">Visit Wing</div>
+              <div className="visit" onClick={() => navigate(ROUTES.CONTACT)}>Let's Chat →</div>
             </div>
     
             {/* RIGHT */}

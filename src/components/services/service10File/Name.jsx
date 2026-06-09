@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../../../routes';
 import "../serviceMobile.css";
 function Name() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: window.innerHeight * 0.5, behavior: "smooth" });
   }, []);
@@ -60,7 +63,7 @@ function Name() {
       <div className="top-section">
         <div className="left">
           <h1>Migrate and manage your infrastructure on the cloud for better scalability, security, and cost-efficiency with AWS, Azure, and Google Cloud.</h1>
-          <div className="visit">Explore Cloud →</div>
+          <div className="visit" onClick={() => navigate(ROUTES.CONTACT)}>Explore Cloud →</div>
         </div>
         <div className="right">
           <div className="block"><h3>Industry</h3><p>Cloud / Infrastructure</p></div>

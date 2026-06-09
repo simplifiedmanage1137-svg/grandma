@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from '../../../routes';
 import "../serviceMobile.css";
 function Name() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({ top: window.innerHeight * 0.8, behavior: "smooth" });
   }, []);
@@ -226,7 +229,7 @@ body::-webkit-scrollbar {
       <div className="top-section">
         <div className="left">
           <h1>We help businesses define what they're building, who it's for, and how it gets to market.</h1>
-          <div className="visit">lets chat →</div>
+          <div className="visit" onClick={() => navigate(ROUTES.CONTACT)}>Let's Chat →</div>
         </div>
         <div className="right">
           <div className="block"><h3>Industry</h3><p>Strategy / Marketing</p></div>
